@@ -1,4 +1,3 @@
-
 set nocompatible
 filetype off
 
@@ -35,8 +34,6 @@ let g:gruvbox_contrast_dark='hard'
 syntax on
 colorscheme gruvbox
 
-
-
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -59,5 +56,6 @@ func! WordProcessorMode()
   set formatprg=par
   setlocal wrap 
   setlocal linebreak 
-endfu 
+endfu
+
 com! WP call WordProcessorMode()
